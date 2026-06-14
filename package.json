@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "agents": "node --env-file=/Users/mitchellhynes/work/spellbook/.env.dev fcsandbox/pi-spawn.mjs",
+    "example": "node fcsandbox/example.mjs",
     "cleanup": "node fcsandbox/pi-cleanup.mjs"
   },
   "dependencies": {
