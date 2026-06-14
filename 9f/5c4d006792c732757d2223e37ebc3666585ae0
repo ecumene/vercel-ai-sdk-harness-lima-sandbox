@@ -1,0 +1,25 @@
+README.md
+  s_12386363f0477b::t_61b2a97a87e536 31-32,34-36,39,41,44-84
+fcsandbox/example.mjs
+  s_12386363f0477b::t_151139b82ef6be 1,3-5,7-8,14,16-21,23-25,27-37,39-52
+package.json
+  s_12386363f0477b::t_9bdef7805c83e0 7
+fcsandbox/lima-fc.yaml
+  s_12386363f0477b::t_37205104450081 31-32
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "9f5c4d006792c732757d2223e37ebc3666585ae0",
+  "prompts": {},
+  "sessions": {
+    "s_12386363f0477b": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "2a4ac59c-5d62-4078-b27a-66f69d7e6044",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Mitchell Hynes <mitch@spellbook.legal>"
+    }
+  }
+}
