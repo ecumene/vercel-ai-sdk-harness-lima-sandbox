@@ -1,0 +1,34 @@
+README.md
+  h_ed211f23d02305 68-71,79,87
+  s_12386363f0477b::t_a4c3509abb846e 99-101,105-107
+  s_247d274e1c18a2::t_ae7acc08e48c4f 3-7,9-13,16,26,80-86,95,102-104,108-124
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "c732e95021d4468617272569230555a9bea53cf5",
+  "prompts": {},
+  "humans": {
+    "h_ed211f23d02305": {
+      "author": "Mitchell Hynes <mitch@spellbook.legal>"
+    }
+  },
+  "sessions": {
+    "s_12386363f0477b": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "2a4ac59c-5d62-4078-b27a-66f69d7e6044",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Mitchell Hynes <mitch@spellbook.legal>"
+    },
+    "s_247d274e1c18a2": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "55dbf2cf-d808-42cd-bf4a-ff049a0bdde7",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Mitchell Hynes <mitch@spellbook.legal>"
+    }
+  }
+}
