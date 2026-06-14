@@ -1,0 +1,15 @@
+{
+  "name": "harness-agent-test",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "agents": "node --env-file=/Users/mitchellhynes/work/spellbook/.env.dev fcsandbox/pi-spawn.mjs",
+    "cleanup": "node fcsandbox/pi-cleanup.mjs"
+  },
+  "dependencies": {
+    "@ai-sdk/harness": "^1.0.0-canary.9",
+    "@ai-sdk/harness-pi": "^1.0.0-canary.5",
+    "@earendil-works/pi-coding-agent": "^0.77.0"
+  }
+}

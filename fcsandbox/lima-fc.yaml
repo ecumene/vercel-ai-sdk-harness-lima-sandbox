@@ -1,0 +1,32 @@
+# Lima VM that hosts our Firecracker microVMs ON THIS MAC via nested virtualization.
+# Requires Apple Silicon M3+ and macOS 15+ (we have M3 Max / macOS 26.5).
+# vz + nestedVirtualization exposes /dev/kvm inside the guest, which Firecracker needs.
+vmType: "vz"
+nestedVirtualization: true
+arch: "aarch64"
+
+images:
+  - location: "https://cloud-images.ubuntu.com/releases/24.04/release/ubuntu-24.04-server-cloudimg-arm64.img"
+    arch: "aarch64"
+
+cpus: 6
+memory: "8GiB"
+disk: "40GiB"
+
+mounts:
+  - location: "~/work/harness-agent-test"
+    writable: true
+
+# Make sure KVM is usable by the default lima user.
+provision:
+  - mode: system
+    script: |
+      #!/bin/bash
+      set -eux
+      apt-get update
+      apt-get install -y curl unzip squashfs-tools iproute2 iptables openssh-client
+      # node for running the control plane + harness inside the guest
+      curl -fsSL https://deb.nodesource.com/setup_22.x | bash -
+      apt-get install -y nodejs
+      # ensure /dev/kvm is group-accessible
+      [ -e /dev/kvm ] && chmod 666 /dev/kvm || true

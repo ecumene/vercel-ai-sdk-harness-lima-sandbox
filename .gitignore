@@ -1,0 +1,17 @@
+# dependencies
+node_modules/
+
+# runtime sandbox state (VM disks, sqlite db, generated ssh keys, kernel/rootfs)
+fcsandbox/.state/
+fcstate/
+
+# env / secrets
+.env
+.env.*
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+
+# os
+.DS_Store
