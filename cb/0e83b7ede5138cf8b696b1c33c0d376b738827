@@ -1,0 +1,19 @@
+.gitignore
+  s_12386363f0477b::t_cdc1e84193bcd6 1-17
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "cb0e83b7ede5138cf8b696b1c33c0d376b738827",
+  "prompts": {},
+  "sessions": {
+    "s_12386363f0477b": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "2a4ac59c-5d62-4078-b27a-66f69d7e6044",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Mitchell Hynes <mitch@spellbook.legal>"
+    }
+  }
+}
